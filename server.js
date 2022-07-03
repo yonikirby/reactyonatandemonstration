@@ -3,7 +3,8 @@ const cors = require("cors");
 const app = express().use('*', cors());
 const formidable = require('formidable');
 var favicon = require('serve-favicon')
-app.use(favicon('./favicon.ico'))
+//app.use(favicon('./favicon.ico'))
+app.use(favicon(__dirname + '/public/favicon.ico'));
 const path = require('path');
 
 
